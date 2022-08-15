@@ -8,6 +8,7 @@
     
     <a-assets>
         <a-asset-item id="spire1" src="spire1.glb"></a-asset-item>
+        <a-asset-item id="nuclear" src="nuclear.glb"></a-asset-item>
       </a-assets>
 
     <a-scene>
@@ -18,7 +19,8 @@
       </a-camera>
 
       <a-entity environment="preset:yavapai; skyType:gradient; skyColor: #445; groundYScale:10; playArea:1.6;"></a-entity>
-      <a-entity gltf-model="#spire1" position="0 0 -5" scale="0.5"></a-entity>
+      <a-entity gltf-model="#spire1" position="0 10 -5" scale="0.5"></a-entity>
+      <a-entity gltf-model="#nuclear" position="0 0 -5" scale="1"></a-entity>
     </a-scene>
 
   </body>
