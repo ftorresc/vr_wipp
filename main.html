@@ -3,18 +3,22 @@
   <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r134/examples/js/deprecated/Geometry.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
   </head>
   <body>
     
     
 
-    <a-scene physics="debug:true">
+    <a-scene physics>
       <a-assets>
         <a-asset-item id="spire1" src="spire1.glb"></a-asset-item>
         <a-asset-item id="nuclear" src="nuclear.glb"></a-asset-item>
         <a-asset-item id="cross_spire" src="cross_spire.glb"></a-asset-item>
         <a-asset-item id="cross_spire2" src="cross_spire2.glb"></a-asset-item>
         <a-asset-item id="spire2" src="spire2.glb"></a-asset-item>
+        <a-asset-item id="spikefield" src="spikefield.glb"></a-asset-item>
       </a-assets>
       <!--<a-sound src="placeholder_song.mp3" autoplay="true"></a-sound>-->
       <a-camera>
@@ -22,7 +26,9 @@
         <a-entity cursor position="0 0 -1" geometry="primitive : sphere; radius : 0.01" material="color : white; shader : flat; opacity : 0.5"></a-entity>
       </a-camera>
 
-      <a-entity environment="preset:yavapai; skyType:gradient; skyColor: #445; groundYScale:10; playArea:1.6;"></a-entity>
+      <a-entity ground color="red" position ="0 2 0"></a-entity>
+      <a-entity environment="preset:yavapai; skyType:gradient; skyColor: #445; groundYScale:10; playArea:1.6;"></a-entity>-->
+
       <a-entity gltf-model="#spire2" position="-15 0 0" scale="1"></a-entity>
       <a-entity gltf-model="#spire2" position="55 0 0" scale="1"></a-entity>
       <a-entity gltf-model="#spire2" position="20 0 35" scale="1"></a-entity>
@@ -32,6 +38,11 @@
       <a-entity gltf-model="#cross_spire2" position="50 0 0" scale="1"></a-entity>
       <a-entity gltf-model="#cross_spire2" position="20 0 30" scale="" rotation="0 -90 0"></a-entity>
       <a-entity  gltf-model="#cross_spire2" position="20 0 -30" scale="" rotation="0 -90 0"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="-25 0 -1"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="65 0 -1" rotation="0 180 0"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="20 0 45" rotation="0 -90 0"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="20 0 -45" rotation="0 90 0"></a-entity>
+      <a-box position="2 2 2" rotation="0 45 0" color="#4CC3D9" static-body></a-box>
     </a-scene>
 
   </body>
