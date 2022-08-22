@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
     <script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script> 
@@ -43,12 +44,16 @@
       <a-entity  gltf-model="#spikefield" position="65 0 -1" rotation="0 180 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 45" rotation="0 -90 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 -45" rotation="0 90 0"></a-entity>
-      <a-box src="texturet.png" position="-40 2 0" rotation="0 0 0" scale="0.7 10 3.5" static-body>
-        <a-entity text="value: To you, a thousand years from now. \n \n If you understand this message then heed my warning. \n \n There is nothing for you here but death and disease.; align: center" position = "-0.5 0.2 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
+      <a-box src="texturet.png" position="-40 2 5" rotation="0 0 0" scale="0.7 10 3.5" static-body>
+        <a-entity text="value: To you, a thousand years from now. \n \n If you understand this message then heed my warning. \n \n There is nothing for you here but death and disease.; align: center;" position = "-0.5 0.2 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
+      </a-box>
+
+      <a-box src="texturet.png" position="-40 2 -5" rotation="0 0 0" scale="0.7 10 3.5" static-body>
+        <a-entity text="value: A vous, mille ans dans le futur. \n \n Si vous comprenez ce message, tenez compte de mon avertissement. \n \n Il n'y a rien pour vous ici apart mort et maladie.; align: center;" position = "-0.5 0.2 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
       </a-box>
       
       <!--<a-sound src="brown_noise.mp3" autoplay="true" position="20 0 0" sound="volume: 1.5"></a-sound>-->
     </a-scene>
 
   </body>
-</html>text="value:  To you, a thousand years from now. \n \n If you understand this message then heed my warning. \n \n There is nothing for you here but death and disease.;  
+</html>
