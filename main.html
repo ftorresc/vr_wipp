@@ -16,10 +16,13 @@
       <a-assets>
         <a-asset-item id="spire1" src="spire1.glb"></a-asset-item>
         <a-asset-item id="nuclear" src="nuclear.glb"></a-asset-item>
+        <a-asset-item id="nuclear2" src="nuclear2.glb"></a-asset-item>
         <a-asset-item id="cross_spire" src="cross_spire.glb"></a-asset-item>
         <a-asset-item id="cross_spire2" src="cross_spire2.glb"></a-asset-item>
         <a-asset-item id="spire2" src="spire2.glb"></a-asset-item>
-        <a-asset-item id="spikefield" src="spikefield.glb"></a-asset-item>
+        <a-asset-item id="spikefield" src="spikefield2.glb"></a-asset-item>
+        <a-asset-item id="spikeship" src="spikeship2.glb"></a-asset-item>
+        <a-asset-item id="tower" src="tower.glb"></a-asset-item>
       </a-assets>
       <!--<a-sound src="placeholder_song.mp3" autoplay="true"></a-sound>-->
       <a-camera position = "-40 1.6 0 ">
@@ -36,11 +39,12 @@
       <a-entity gltf-model="#spire2" position="20 0 35" scale="1"></a-entity>
       <a-entity gltf-model="#spire2" position="20 0 -35" scale="1"></a-entity>
       <a-entity gltf-model="#nuclear" position="0 0 -5" scale="1" ></a-entity>
+      <a-entity gltf-model="#nuclear2" position="0 0 -5" scale="1" ></a-entity>
       <a-entity gltf-model="#cross_spire2" position="-10 0 0" scale="1" ></a-entity>
       <a-entity gltf-model="#cross_spire2" position="50 0 0" scale="1"></a-entity>
       <a-entity gltf-model="#cross_spire2" position="20 0 30" scale="" rotation="0 -90 0"></a-entity>
       <a-entity  gltf-model="#cross_spire2" position="20 0 -30" scale="" rotation="0 -90 0"></a-entity>
-      <a-entity  gltf-model="#spikefield" positioasn="-25 0 -1"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="-25 0 -1"></a-entity>
       <a-entity  gltf-model="#spikefield" position="65 0 -1" rotation="0 180 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 45" rotation="0 -90 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 -45" rotation="0 90 0"></a-entity>
@@ -52,6 +56,10 @@
         <a-entity text="value: A vous, mille ans dans le futur. \n \n Si vous comprenez ce message, tenez compte de mon avertissement. \n \n Il n'y a rien pour vous ici apart mort et maladie.; align: center;" position = "-0.5 0.2 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
       </a-box>
       
+      <a-entity gltf-model="spikeship2.glb" position="-20 0.5 -40" rotation="-1 45 0" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="spikeship2.glb" position="-20 0.5 40" rotation="-1 135 0" scale="2 2 2"></a-entity>
+      <a-entity gltf-model="tower.glb" position="20 10 0"></a-entity>
+      <a-box src="blackstone.jpg"position="20 7.65 0" scale="9 5 9" material="" geometry=""></a-box>
       <!--<a-sound src="brown_noise.mp3" autoplay="true" position="20 0 0" sound="volume: 1.5"></a-sound>-->
     </a-scene>
 
