@@ -6,3 +6,4 @@ Inclusion of chinese and japanese character set was attempted through https://ms
 Although the project benefits from the mostly-black aesthetic, texture work was not able to be further developed because of GLTF texture requirements(elaborate)
 
 PBr textures
+shader trial and error
