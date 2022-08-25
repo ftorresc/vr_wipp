@@ -7,3 +7,6 @@ Although the project benefits from the mostly-black aesthetic, texture work was 
 
 PBr textures
 shader trial and error
+
+https://www.flickr.com/photos/sitoo/45978213965
+https://www.turbosquid.com/3d-models/free-barrel-radioactive-3d-model/1014400
