@@ -1,9 +1,5 @@
 # vr_wipp
 
-
-
-
-
 ## Overview
 This vr project attempts to bring to life a vision of the Waste Isolation Pilot Plant ([WIPP](https://en.wikipedia.org/wiki/Waste_Isolation_Pilot_Plant)) initial work which attempted to create a future-proof warning system that would last as long as the nuclear waste itself, through symbolism and aggressive architectural designs.
 
