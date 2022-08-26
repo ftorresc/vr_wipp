@@ -24,18 +24,23 @@
         <a-asset-item id="breakwater" src="assets/breakwater.glb"></a-asset-item>
         <a-asset-item id="tower" src="assets/tower.glb"></a-asset-item>
         <a-asset-item id="barrel" src="assets/OilBarrel.glb"></a-asset-item>
+        <a-asset-item id="mountain" src="assets/mountain.glb"></a-asset-item>
         <img id='fond' src="canyon360.jpg" alt="monFond">
         <img id='abc' src="desert-sand-texture.jpg" alt="maTexture">
       </a-assets>
 
 
       <!-- <a-sound src="assets/placeholder_song.mp3" autoplay="true"></a-sound>-->
-      <a-camera position = "-65 1.6 0">
-        <a-cursor raycaster="showLine : true"></a-cursor>
-        <a-entity cursor position="0 0 -1" geometry="primitive : sphere; radius : 0.01" material="color : white; shader : flat; opacity : 0.5"></a-entity>
-      </a-camera>
-     <!-- <a-sky src="#fond"></a-sky>
-      <a-plane src="#abc" repeat="4" position="0 0 -4" rotation="-90 0 0" width="300" height="300" color="#ffcc80" shadow></a-plane>-->
+      <a-entity position="-85 1.6 0" rotation="0 -90 0">
+        <a-camera rotation="" camera="" look-controls="" wasd-controls="acceleration: 30" data-aframe-inspector-original-camera="">
+        <a-cursor raycaster="showLine: true" material="" line="end: 0 0 -102.8352260271421; color: white" cursor="" geometry=""></a-cursor>
+        <a-entity cursor="" position="0 0 -1" geometry="primitive: sphere; radius: 0.01" material="color: white; shader: flat; opacity: 0.5" raycaster=""></a-entity>
+        </a-camera>
+      </a-entity>
+     <!-- <a-sky src="#fond"></a-sky>-->
+
+     <!--Ground extension-->
+      <a-plane  repeat="4" position="0 -2 -4" rotation="-90 0 0" width="400" height="400" color="#b65e43" shadow></a-plane>
 
       <a-entity environment="preset:yavapai; skyType:gradient; skyColor: #445; groundYScale:10; playArea:1.6;"></a-entity>
 
@@ -96,6 +101,11 @@
       <a-entity  gltf-model="#spikefield" position="65 0 -1" rotation="0 180 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 45" rotation="0 -90 0"></a-entity>
       <a-entity  gltf-model="#spikefield" position="20 0 -45" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#mountain" position="-125 0 -45.73" rotation="0 90 0" scale="30 30 30"></a-entity>
+      <a-entity gltf-model="#mountain" position="20 0 -125" scale="30 30 30"></a-entity>
+      <a-entity gltf-model="#mountain" position="-11.13 0 120" rotation="0 180 0" scale="30 30 30"></a-entity>
+      <a-entity gltf-model="#mountain" position="120 0 1.17" rotation="0 -90 0" scale="30 30 30"></a-entity>
+
       <a-box src="assets/texturet.png" position="-60 2 5" rotation="0 0 0" scale="0.7 10 3.5" static-body>
         <a-entity text="value: To you, a thousand years from now. \n \n If you understand this message then heed my warning. \n \n There is nothing for you here but death and disease.; align: center;" position = "-0.5 0.2 0" scale="1 1 1" rotation="0 -90 0"></a-entity>
       </a-box>

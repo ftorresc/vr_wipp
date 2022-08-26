@@ -10,3 +10,4 @@ shader trial and error
 
 https://www.flickr.com/photos/sitoo/45978213965
 https://www.turbosquid.com/3d-models/free-barrel-radioactive-3d-model/1014400
+https://github.com/supermedium/aframe-environment-component/issues/75
