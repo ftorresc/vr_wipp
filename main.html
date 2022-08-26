@@ -7,7 +7,6 @@
     <script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r134/examples/js/deprecated/Geometry.js"></script>
     <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
-    <script src="https://unpkg.com/aframe-mountain-component@^0.3.2/aframe-mountain-component.min.js"></script>
   </head>
   <body>
     
@@ -28,11 +27,11 @@
         <a-asset-item id="breakwater" src="breakwater.glb"></a-asset-item>
         <a-asset-item id="breakwater_low" src="breakwater_low.glb"></a-asset-item>
         <a-asset-item id="tower" src="tower.glb"></a-asset-item>
-        <a-asset-item id="barrel" src="OilBarrel.glb"></a-asset-item>
-        <img id='fond' src="canyon360.jpg" alt="monFond">
+        <a-asset-item id="barrel" src="assets/OilBarrel.glb"></a-asset-item>
+        <img id='fond' src="canyon360.jpg" alt="monFond">place
         <img id='abc' src="desert-sand-texture.jpg" alt="maTexture">
       </a-assets>
-      <!--<a-sound src="placeholder_song.mp3" autoplay="true"></a-sound>-->
+      <!-- <a-sound src="assets/placeholder_song.mp3" autoplay="true"></a-sound>-->
       <a-camera position = "-65 1.6 0">
         <a-cursor raycaster="showLine : true"></a-cursor>
         <a-entity cursor position="0 0 -1" geometry="primitive : sphere; radius : 0.01" material="color : white; shader : flat; opacity : 0.5"></a-entity>
@@ -48,31 +47,45 @@
       <a-entity gltf-model="#spire2" position="20 0 -35" scale="1"></a-entity>
       <a-entity gltf-model="#paintednucleartotal" position="0 0 -5" scale="1" ></a-entity>
       <a-entity position="20 0 0">
-        <a-entity gltf-model="OilBarrel.glb" position="2 1.20241 -1.60818" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="0.71688 0 -2" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="2 0 -2" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="-0.12813 0 -2" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="0.8464 1.18549 -1.76719" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="1.19533 0 -1.36952" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="1.10962 0 -0.55538" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="2.16797 0 -1.27131" scale="0.1 0.1 0.1"></a-entity>
-        <a-entity gltf-model="OilBarrel.glb" position="0.28143 0 -2.68146" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="2 1.20241 -1.60818" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="0.71688 0 -2" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="2 0 -2" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="-0.12813 0 -2" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="0.8464 1.18549 -1.76719" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="1.19533 0 -1.36952" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="1.10962 0 -0.55538" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="2.16797 0 -1.27131" scale="0.1 0.1 0.1"></a-entity>
+        <a-entity gltf-model="assets/OilBarrel.glb" position="0.28143 0 -2.68146" scale="0.1 0.1 0.1"></a-entity>
         </a-entity>
         <a-entity position="20 0 0.34441" rotation="0 -87 0">
-          <a-entity gltf-model="OilBarrel.glb" position="2 1.20241 -1.60818" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="0.71688 0 -2" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="2 0 -2" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="-0.12813 0 -2" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="0.8464 1.18549 -1.76719" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="1.19533 0 -1.36952" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="1.10962 0 -0.55538" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="2.16797 0 -1.27131" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="0.28143 0 -2.68146" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
-          <a-entity gltf-model="OilBarrel.glb" position="1.1526 1.18549 -0.91555" scale="0.1 0.1 0.1"></a-entity>
-          </a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="2 1.20241 -1.60818" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.71688 0 -2" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="2 0 -2" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="-0.12813 0 -2" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.8464 1.18549 -1.76719" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.19533 0 -1.36952" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.10962 0 -0.55538" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="2.16797 0 -1.27131" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.28143 0 -2.68146" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.22841 0 -1.27202" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.1526 1.18549 -0.91555" scale="0.1 0.1 0.1"></a-entity>
+        </a-entity>
+        <a-entity position="16.73186 0 3.04249" rotation="0 -87 0">
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.71688 0 -2" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="2 0 -2" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="-0.12813 0.38 -2" scale="0.1 0.1 0.1" rotation="0 0 90"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.8464 1.18549 -1.76719" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.19533 0 -1.36952" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.10962 0 -0.55538" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="2.16797 0 -1.27131" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="0.28143 0 -2.68146" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="1.1526 1.18549 -0.91555" scale="0.1 0.1 0.1"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="-0.12813 0.38 -2" scale="0.1 0.1 0.1" rotation="0 0 90"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="-2.02799 0.38 0.57583" scale="0.1 0.1 0.1" rotation="0 -40.92000000000001 90"></a-entity>
+          <a-entity gltf-model="assets/OilBarrel.glb" position="-5.70974 0.38 0.03423" scale="0.1 0.1 0.1" rotation="0 -67 90"></a-entity>
+        </a-entity>
     <!--  <a-entity gltf-model="#nuclear2" position="0 0 -5" scale="1" ></a-entity>-->
       <a-entity gltf-model="#cross_spire2" position="-10 0 0" scale="1" ></a-entity>
       <a-entity gltf-model="#cross_spire2" position="50 0 0" scale="1"></a-entity>
@@ -98,7 +111,7 @@
       <a-box src="blackstone.jpg"position="20 7.65 0" scale="9 5 9" material="" geometry=""></a-box>
       <a-entity gltf-model="breakwater.glb" position="-55 2 -70" rotation="0 0 -45" scale="3 3 3"></a-entity>
       <a-entity gltf-model="breakwater.glb" position="-46.07 2 70" rotation="21.26 45 -45" scale="4 4 4"></a-entity>
-      <!--<a-sound src="brown_noise.mp3" autoplay="true" position="20 0 0" sound="volume: 1.5"></a-sound>-->
+      <!-- <a-sound src="assets/brown_noise.mp3" autoplay="true" position="20 0 0" sound="volume: 1.5"></a-sound>-->
     </a-scene>
 
   </body>
