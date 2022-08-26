@@ -25,8 +25,9 @@ The project is built upon [A-Frame](https://aframe.io/) and Supermedium's [afram
 
 - Although the project benefits from the mostly-black aesthetic of the structures, texture work was not able to be further developed because of GLTF texture requirements that did not allow to export some shaders used in Blender.
 
-Overall, the project was a personal success as I was able to gain a certain level of proficiency within Blender (software I had not previously used), being able to create and texture multiple components of various shapes for the project.
+- Due to browsers only allowing audio to be played after user interaction, a "begin experience" screen was added. When the user clicks it, audio begins playing. Inspired by  (Lee Stemkoski's)[https://github.com/stemkoski/A-Frame-Examples/blob/master/fade-in.html] solution.
 
+Overall, the project was a personal success as I was able to gain a certain level of proficiency within Blender (software I had not previously used), being able to create and texture multiple components of various shapes for the project.
 
 ## Preview
 
