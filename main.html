@@ -24,6 +24,8 @@
         <a-asset-item id="tower" src="assets/tower.glb"></a-asset-item>
         <a-asset-item id="barrel" src="assets/OilBarrel.glb"></a-asset-item>
         <a-asset-item id="mountain" src="assets/mountain.glb"></a-asset-item>
+        <audio id="brown_noise" src="assets/brown_noise.mp3"></audio>
+        <audio id="background_music" src="assets/background_music.mp3"></audio>
       </a-assets>
 
       <!--Parent entity to control camera's rotation-->
@@ -37,19 +39,19 @@
       <!--Environment component-->
       <a-entity environment="preset:yavapai; skyType:gradient; skyColor: #22222a; groundYScale:10; playArea:1.6;"></a-entity>
 
-      <a-entity gltf-model="#spire2" position="-15 0 0" scale="1"></a-entity>
-      <a-entity gltf-model="#spire2" position="55 0 0" scale="1"></a-entity>
-      <a-entity gltf-model="#spire2" position="20 0 35" scale="1"></a-entity>
-      <a-entity gltf-model="#spire2" position="20 0 -35" scale="1"></a-entity>
+      <a-entity gltf-model="#spire2" position="-20 0 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity gltf-model="#spire2" position="60 0 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity gltf-model="#spire2" position="20 0 40" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity gltf-model="#spire2" position="20 0 -40" scale="1.5 1.5 1.5"></a-entity>
 
       <!--Central room-->
       <a-entity gltf-model="#paintednucleartotal" position="0 0 -5" scale="1" ></a-entity>
 
       <!--Background music-->
-        <a-sound src="assets/background_music.mp3" autoplay="true" sound="volume: 1.5"></a-sound>
+        <a-sound src="#background_music" autoplay="true" sound="volume: 1.5" preload="auto"></a-sound>
 
       <!--Positional sounds placed near the barrels-->
-        <a-sound src="assets/brown_noise.mp3" autoplay="true" position="20 0 0" sound="volume: 1.1"></a-sound>
+        <a-sound src="#brown_noise" autoplay="true" position="20 0 0" sound="volume: 1.1" preload="auto"></a-sound>
 
       <!--Nuclear barrels-->
       <a-entity position="20 0 0">
@@ -100,10 +102,10 @@
       <a-entity  gltf-model="#cross_spire2" position="20 0 -30" scale="" rotation="0 -90 0"></a-entity>
 
       <!--Spike fields-->
-      <a-entity  gltf-model="#spikefield" position="-35 0 -1"></a-entity>
-      <a-entity  gltf-model="#spikefield" position="65 0 -1" rotation="0 180 0"></a-entity>
-      <a-entity  gltf-model="#spikefield" position="20 0 45" rotation="0 -90 0"></a-entity>
-      <a-entity  gltf-model="#spikefield" position="20 0 -45" rotation="0 90 0"></a-entity>
+      <a-entity gltf-model="#spikefield" position="-35 0 -1" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="75 0 -1" rotation="0 180 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity gltf-model="#spikefield" position="20 0 55" rotation="0 -90 0" scale="1.5 1.5 1.5"></a-entity>
+      <a-entity  gltf-model="#spikefield" position="20 0 -55" rotation="0 90 0" scale="1.5 1.5 1.5"></a-entity>
 
       <!--Mountains surrounding scene-->
       <a-entity gltf-model="#mountain" position="-125 0 -45.73" rotation="0 90 0" scale="30 30 30"></a-entity>
